@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Message Board</title>
+    <meta name="description" content="message board">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #list { display: block; }
+      li { list-style: none; display: block; }
+    </style>
+  </head>
+  <body>
+    <iframe src="/get"></iframe>
+    <textarea id="newarea"></textarea>
+    <button type="button" id="btn">Send</button>
+    <div id="a" style="clip: rect(0 0 0 0);clip-path: circle(0);"></div>
+    <script>
+    btn.onclick = function click() { 
+      console.log(1)
+      a.innerHTML = "<img src='/add/" + encodeURIComponent((/** @type {HTMLTextAreaElement} */ (newarea)).value) + "'>"
+    }
+    </script>
+  </body>
+</html>
